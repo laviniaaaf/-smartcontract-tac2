@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato de Bloqueio Temporal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contrato de Bloqueio Temporal</h1>
+
+        <div class="card" id="walletCard">
+            <div id="disconnectedState">
+                <button id="connectWallet">Conectar Carteira</button>
+            </div>
+            <div id="connectedState" style="display: none;">
+                <p>Carteira Conectada:</p>
+                <button id="disconnectWallet">Desconectar</button>
+            </div>
+        </div>
+
+        <div class="card" id="contractInfo" style="display: none;">
+            <h2>Informações do Contrato</h2>
+            <p>Proprietário: <span id="owner"></span></p>
+            <p>Tempo de Desbloqueio: <span id="unlockTime"></span></p>
+        </div>
+
+        <div class="card" id="lockForm" style="display: none;">
+            <div class="form-group">
+                <label for="unlockDate">Tempo de Desbloqueio:</label>
+                <input type="datetime-local" id="unlockDate">
+            </div>
+            <div class="form-group">
+                <label for="amount">Quantidade (ETH):</label>
+                <input type="number" id="amount" step="0.001" min="0">
+            </div>
+            <button id="lockFunds">Bloquear Fundos</button>
+        </div>
+
+        <button id="withdrawFunds" style="display: none;">Retirar Fundos</button>
+    </div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>
