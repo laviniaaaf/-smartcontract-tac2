@@ -16,7 +16,10 @@ O contrato `Lock.sol` implementa as seguintes funcionalidades:
 - **Solidity**: Linguagem de programação para smart contracts
 - **Hardhat**: Framework de desenvolvimento
 - **Ethers.js**: Biblioteca para interação com a blockchain
+- **Frontend**: React + Wagmi v2
 - **Chai**: Framework de testes
+- **Blockchain**: Ethereum
+- **Carteira**: MetaMask
 
 ## Estrutura do Projeto 📁 
 
@@ -76,6 +79,8 @@ hardhat/
 
 ### Tela 2
 ![Tela 2](images/tela2.png)
+
+### Configure o Ambiente Local
 
 ## Testes ✅
 
